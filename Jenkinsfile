@@ -15,7 +15,7 @@ pipeline {
             }
         }
 
-        stage('Compile') {
+        stage('Compile with maven') {
             steps {
                 echo 'Compiling code...'
                 sh 'mvn clean compile'
@@ -42,7 +42,7 @@ pipeline {
             echo 'Pipeline execution completed.'
         }
         success {
-            echo 'Build successful by Chuka and Smart Team!'
+            echo 'Build successful by Moyin and Mercy!'
         }
         failure {
             echo 'Build failed!'
